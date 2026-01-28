@@ -23,24 +23,27 @@
             </header>
 
             <!-- log in section -->
-            <div class="bg-base-200">
+            <form class="bg-base-200">
                 <div class="flex-col lg:flex-row-reverse">
 
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
                             <fieldset class="fieldset">
                                 <label class="label">Mobile Number</label>
-                                <input type="email" class="input" placeholder="Enter Your Mobile Number" />
+                                <input id="account-number" type="number" class="input"
+                                    placeholder="Enter Your Mobile Number" / required>
                                 <label class="label">4 Digit Pin</label>
-                                <input type="text" class="input" placeholder="Enter 4 Digit Pin" />
-                                <button class="btn btn-neutral mt-4">Login</button>
+                                <input type="text" id="password" class="input" placeholder="Enter 4 Digit Pin" /
+                                    required>
+                                <button class="btn btn-neutral mt-4" id="login-btn">Login</button>
                             </fieldset>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
+    <script src="script/login.js"></script>
 </body>
 
 </html>
