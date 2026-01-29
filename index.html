@@ -4,45 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Halal Bank</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body class="bg-slate-800">
-    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200 flex justify-center items-center">
-
-        <div>
-            <header class="mb-10">
-                <nav class="flex justify-center items-center ">
-                    <div class="relative w-9/12">
-                        <img class="absolute" src="assets/bg.png" alt="">
-                        <img class="mt-5 ml-15" src="assets/Group.png" alt="">
-                    </div>
-                </nav>
-            </header>
-
-            <!-- log in section -->
-            <form class="bg-base-200">
-                <div class="flex-col lg:flex-row-reverse">
-
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                        <div class="card-body">
-                            <fieldset class="fieldset">
-                                <label class="label">Mobile Number</label>
-                                <input id="account-number" type="number" class="input"
-                                    placeholder="Enter Your Mobile Number" / required>
-                                <label class="label">4 Digit Pin</label>
-                                <input type="text" id="password" class="input" placeholder="Enter 4 Digit Pin" /
-                                    required>
-                                <button class="btn btn-neutral mt-4" id="login-btn">Login</button>
-                            </fieldset>
+    <main>
+        <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200 flex justify-center items-center">
+            <div>
+                <!-- navbar part -->
+                <header class="mb-10">
+                    <nav class="flex justify-center items-center ">
+                        <div class="relative w-9/12">
+                            <img class="absolute" src="assets/bg.png" alt="">
+                            <img class="mt-5 ml-15" src="assets/Group.png" alt="">
                         </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
+                    </nav>
+                </header>
+
+                <!-- log in section -->
+                <form class="bg-base-200">
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+                                    <label class="label font-bold text-black">Mobile Number</label>
+                                    <input id="account-number" type="number" class="input bg-slate-100 rounded-2xl"
+                                        placeholder="Enter Your Mobile Number" / required>
+                                    <label class="label font-bold text-black">4 Digit Pin</label>
+                                    <input type="text" id="password" class="input bg-slate-100 rounded-2xl" placeholder="Enter 4 Digit Pin" /
+                                        required>
+                                    <button class="btn btn-neutral mt-4 bg-blue-600 border-0">Login</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </section>
+    </main>
     <script src="script/login.js"></script>
 </body>
 
