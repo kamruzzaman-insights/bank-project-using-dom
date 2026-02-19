@@ -11,6 +11,11 @@ function showSection(activeId) {
 
 function getValueFromInputField (id) {
     const value = document.getElementById(id).value;
+    document.getElementById(id).value = '';
+    if(value == ''){
+        alert('Please enter amount');
+        return 0;
+    }
     return parseFloat(value);
 }
 
