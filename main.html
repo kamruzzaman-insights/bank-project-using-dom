@@ -17,7 +17,7 @@
                 <div class="flex justify-center items-center">
                     <img class="w-12" src="assets/Group.png" alt="">
                     <div>
-                        <h3 class="font-extrabold text-lg">$45000</h3>
+                        <h3 class="font-extrabold text-lg">$ <span id="total-amount">45000</span></h3>
                         <p class="text-neutral-950  opacity-50 ">Available Balance</p>
                     </div>
                 </div>
@@ -151,13 +151,13 @@
                                     <input type="password" class="input rounded-2xl" placeholder="Enter 11 Digit Acount Number" />
 
                                     <label class="label font-bold">Amount to Add</label>
-                                    <input type="password" class="input rounded-2xl" placeholder="Add Amount to Add" />
+                                    <input id="add-money-input-field" type="number" class="input rounded-2xl" placeholder="Add Amount to Add" />
 
                                     <label class="label font-bold">Pin Number</label>
                                     <input type="password" class="input rounded-2xl" placeholder="4 Digit Pin Number" />
 
                                     <div><a class="link link-hover">Forgot password?</a></div>
-                                    <button class="btn rounded-2xl btn-neutral mt-4 bg-blue-600 border-0">Login</button>
+                                    <button id="add-money-event-btn" class="btn rounded-2xl btn-neutral mt-4 bg-blue-600 border-0">Money Add</button>
                                 </fieldset>
                             </div>
                         </div>
@@ -346,6 +346,7 @@
     <script src="script/login.js"></script>
     <script src="script/toogle.js"></script>
     <script src="script/common.js"></script>
+    <script src="script/add-money.js"></script>
 </body>
 
 </html>

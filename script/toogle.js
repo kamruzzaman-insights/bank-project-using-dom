@@ -45,12 +45,7 @@ Object.keys(buttons).forEach(btnId => {
 //     showSection("transaction-history-section");
 // })
 
-function showSection(activeId) {
-    sections.forEach(id => {
-        document.getElementById(id).style.display = "none";
-    })
-    document.getElementById(activeId).style.display = "block";
-}
+
 
 function hideAllSection () {
     sections.forEach(id => {
